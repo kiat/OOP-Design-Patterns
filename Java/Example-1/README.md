@@ -12,23 +12,31 @@ mvn clean compile
 
 mvn clean compile assembly:single
 
+or 
 
-
-# How to run
 
 mvn clean package
 
 
+# How to run
+
+
+java -cp target/*.jar edu.bu.met.cs665.Main
+
+or
+
+run.sh 
 
 # Using Findbugs 
 
-
-
 To see bug detail using the Findbugs GUI, use the following command "mvn findbugs:gui"
 
+Or you can create a XML report by using  
 
-Or you can create a XML report by using 
 
+mvn findbugs:gui 
+
+or 
 
 mvn findbugs:findbugs
 
