@@ -20,20 +20,35 @@ public class Person {
 
 	private LocalDate birthDay;
 
-	
+	// 
 	public String calculateAge() {
 		return calculateAgeUntil(java.time.LocalDate.now());
 	}
 
+	// Calculates the age of a person as a string description. 
 	public String calculateAgeUntil(LocalDate until) {
-		if ((birthDay != null)) {
-			Period p = Period.between(birthDay, until);
+		Period p = calculateAgeUntilPeriod(until);
+
+		if ((p != null)) {
 			return p.getYears() + " years and " + p.getMonths() + " months and " + p.getDays() + " days";
 		} else {
 			return "Can not Calculate the age - birthDay is null";
 		}
 	}
 
+	// Calculates the age of a person as a java Period object
+	// Check if the birth day is set 
+	public Period calculateAgeUntilPeriod(LocalDate until) {
+		if ((birthDay != null)) {
+			return Period.between(birthDay, until);
+		} else {
+			return null;
+		}
+	}
+
+	
+	// Getter and Setter Methods 
+	
 	public String getFirstName() {
 		return firstName;
 	}
