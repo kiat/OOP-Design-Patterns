@@ -1,6 +1,6 @@
 package edu.bu.met.cs665.behaviors;
 
-public class brakeParachute implements BrakeBehavior{
+public class BrakeParachute implements BrakeBehavior{
 
 	@Override
 	public void brake() {
