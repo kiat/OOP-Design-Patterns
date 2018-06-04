@@ -1,5 +1,7 @@
 package edu.bu.met.cs665.behaviors;
 
+import edu.bu.met.cs665.meansOfTransportation.MeansOfTransportation;
+
 /**
  * 
  * This interface represents the brake behavior. 
@@ -8,7 +10,7 @@ package edu.bu.met.cs665.behaviors;
 
 public interface BrakeBehavior {
 	
-	// a simple brake method for all means of transportation. 
-	public void brake();
+	// A simple brake method for all means of transportation. 
+	public boolean brake(MeansOfTransportation mot,  double reducedSpeed);
 	
 }

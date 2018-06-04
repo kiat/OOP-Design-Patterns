@@ -1,24 +1,58 @@
 package edu.bu.met.cs665;
 
-import edu.bu.met.cs665.behaviors.Brake;
-import edu.bu.met.cs665.meansOfTransportation.MeansOfTransportation;
+import edu.bu.met.cs665.behaviors.HydraulicBrake;
 import edu.bu.met.cs665.meansOfTransportation.EconomyCar;
+import edu.bu.met.cs665.meansOfTransportation.FighterJet;
 import edu.bu.met.cs665.meansOfTransportation.FullSizeSUV;
+import edu.bu.met.cs665.meansOfTransportation.MeansOfTransportation;
+import edu.bu.met.cs665.meansOfTransportation.SpeedBoat;
 
 public class Main {
 
 	public static void main(String[] args) {
 
+		System.out.println("Economy Car \n");
 		MeansOfTransportation economyCar = new EconomyCar();
-		economyCar.applyBrake(); // This will invoke class "Brake"
+		economyCar.setSpeed(50d); // start running with speed 50 MPH
+		economyCar.applyBrake(20d); // apply the brakes and reduce the speed to 20 MPH
+		economyCar.setSpeed(200); // lets go 200 MPH with an economy car. 
+		economyCar.applyFullBrake(); // apply the full brake 
 
+		System.out.println("\n\n ############## \n\n");
+
+		// Create a SUV Vehicle
+		System.out.println("SUV \n");
 		MeansOfTransportation suvCar = new FullSizeSUV();
-		suvCar.applyBrake(); // This will invoke class "BrakeWithABS"
+		suvCar.setSpeed(120d); // run with 120 MPH
+		suvCar.applyBrake(10d); // This will invoke class "BrakeWithABS" and reduces the speed to 10 MPH 
 
-		// Here we set the brake behavior dynamically
-		suvCar.setBrakeBehavior(new Brake());
-		suvCar.applyBrake();
+		// Here we set the brake behavior dynamically and reduces the speed to 10 MPH
+		suvCar.setBrakeBehavior(new HydraulicBrake());
+		suvCar.applyBrake(10d);
+		suvCar.applyFullBrake(); // apply the full brake 
 
+		System.out.println("\n\n ############## \n\n");
+		System.out.println("FighterJet \n");
+		
+		MeansOfTransportation speedBoat = new SpeedBoat();
+		speedBoat.setSpeed(60d);
+		// braking
+		speedBoat.applyFullBrake();
+		
+		
+		System.out.println("\n\n ############## \n\n");
+		System.out.println("SpeedBoat \n");
+
+		MeansOfTransportation fighterJet = new FighterJet();
+		// fly ... 
+		fighterJet.setSpeed(600d);
+		
+		// landing ... 
+		fighterJet.applyBrake(50d);
+		fighterJet.applyFullBrake();
+		
+
+		
 	}
 
 }

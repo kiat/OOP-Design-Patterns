@@ -2,16 +2,23 @@ package edu.bu.met.cs665.meansOfTransportation;
 
 import edu.bu.met.cs665.behaviors.BrakeBehavior;
 
-public abstract class MeansOfTransportation {
+public interface MeansOfTransportation {
+	// this interface represents all means of transportation. 
+	
+	// methods for apply and set brake behavior of different transportations.  
+	public void applyBrake(double speed);
+	public void applyFullBrake();
 
-	protected BrakeBehavior brakeBehavior;
-
-    public void applyBrake() {
-        brakeBehavior.brake();
-    }
-
-    public void setBrakeBehavior(final BrakeBehavior brakeType) {
-        this.brakeBehavior = brakeType;
-    }
-
+	public void setBrakeBehavior(BrakeBehavior brakeType);
+	
+	public void run(double speed);
+	
+	// getter and setter methods for name. 
+	public String getName();
+	public void  setName(String Name);
+	
+	// getter and setter for speed 
+	public double getSpeed();
+	public boolean setSpeed(double speed); 
+	
 }
