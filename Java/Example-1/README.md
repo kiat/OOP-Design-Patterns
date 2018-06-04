@@ -16,7 +16,7 @@ This example is a basic illustration of strategy design pattern.
 
 These means of transportations have different brake behaviors,  
 
-**Brake Behaviors ** can be:
+**Brake Behaviors** can be:
 
 + **Simple Brake** Simple brake, can be hand brakes 
 + **Brake with ABS** Car brakes with Anti Block System (ABS)
