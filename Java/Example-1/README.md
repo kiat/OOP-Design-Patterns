@@ -64,7 +64,7 @@ mvn clean package
 
 
 ```bash
-java -cp target/*.jar edu.bu.met.cs665.Main
+java -classpath target/Example-1-1.0-SNAPSHOT-jar-with-dependencies.jar edu.bu.met.cs665.Main
 ```
 
 or
