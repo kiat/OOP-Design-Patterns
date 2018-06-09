@@ -1,34 +1,43 @@
 package edu.bu.met.cs665;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import edu.bu.met.cs665.meansOfTransportation.EconomyCar;
 import edu.bu.met.cs665.meansOfTransportation.MeansOfTransportation;
 
-// Write some Unit tests for your program like the following. 
+// Write some Unit tests for your program like the following.
 
-// For this simple example we can not write useful functionality unit tests. 
-
-class TestAge {
+public class TestAge {
 
 	@Test
-	void testEconomyCarSpeed() {
-		
+	public void testEconomyCarSpeed() {
+
 		MeansOfTransportation economyCar=new EconomyCar();
-		// An economy Car should not run with speed higher than 100 miles per hour. 
-		assertEquals(economyCar.setSpeed(105), false);
-	}
-	
-	
-	@Test
-	void testEconomyCarBrake() {
-		
-		MeansOfTransportation economyCar=new EconomyCar();
-		// An economy Car should not run with speed higher than 100 miles per hour. 
+		// An economy Car should not run with speed higher than 100 miles per hour.
 		assertEquals(economyCar.setSpeed(105), false);
 	}
 
+
 	
+	@Test
+	public void testEconomyCarBrake() {
+
+		MeansOfTransportation economyCar=new EconomyCar();
+		// run the car with high speed 
+		economyCar.setSpeed(105);
+		
+		// Then full brake the car 
+		economyCar.applyFullBrake();
+		
+		
+		// An economy Car should not run with speed higher than 100 miles per hour.
+		assertTrue(economyCar.getSpeed() == 0d);
+	}
+
+
 }
+
+
