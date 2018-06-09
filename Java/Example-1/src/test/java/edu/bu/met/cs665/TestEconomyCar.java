@@ -10,7 +10,7 @@ import edu.bu.met.cs665.meansOfTransportation.MeansOfTransportation;
 
 // Write some Unit tests for your program like the following.
 
-public class TestAge {
+public class TestEconomyCar {
 
 	@Test
 	public void testEconomyCarSpeed() {
