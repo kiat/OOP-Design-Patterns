@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
@@ -13,22 +12,28 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<checkstyle.version>8.10.1</checkstyle.version>
+		<checkstyle.plugin.version>2.17</checkstyle.plugin.version>
+		<sevntu.checkstyle.plugin.version>1.29.0</sevntu.checkstyle.plugin.version>
+
+
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jxr-plugin</artifactId>
+				<version>2.5</version>
+			</plugin>
+		</plugins>
+	</reporting>
 	<build>
 
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>findbugs-maven-plugin</artifactId>
-					<version>3.0.6-SNAPSHOT</version>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-
 		<plugins>
-
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
@@ -44,7 +49,7 @@
 					<includeProjectDependencies>true</includeProjectDependencies>
 					<includePluginDependencies>true</includePluginDependencies>
 					<killAfter>-1</killAfter>
-					<!-- <mainClass>edu.rice.cs.topK.prepareData.LoadAndPrepareData</mainClass> -->
+					<mainClass>edu.rice.cs.topK.prepareData.LoadAndPrepareData</mainClass>
 					<cleanupDaemonThreads>false</cleanupDaemonThreads>
 				</configuration>
 			</plugin>
@@ -62,8 +67,30 @@
 				</configuration>
 			</plugin>
 
-
-
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<version>${checkstyle.plugin.version}</version>
+				<dependencies>
+					<dependency>
+						<groupId>com.puppycrawl.tools</groupId>
+						<artifactId>checkstyle</artifactId>
+						<version>${checkstyle.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>com.github.sevntu-checkstyle</groupId>
+						<artifactId>sevntu-checkstyle-maven-plugin</artifactId>
+						<version>${sevntu.checkstyle.plugin.version}</version>
+					</dependency>
+				</dependencies>
+				<!-- Specifying configuration here will take effect on the execution 
+					of "mvn checkstyle:checkstyle", but will not take effect on the execution 
+					of "mvn site" -->
+				<configuration>
+					<configLocation>config/checkstyle.xml</configLocation>
+					<failOnViolation>false</failOnViolation>
+				</configuration>
+			</plugin>
 
 
 			<plugin>
@@ -93,7 +120,6 @@
 					</execution>
 				</executions>
 			</plugin>
-
 		</plugins>
 
 	</build>
@@ -111,5 +137,7 @@
 			<artifactId>findbugs</artifactId>
 			<version>4.48-h-2</version>
 		</dependency>
+
+
 	</dependencies>
 </project>

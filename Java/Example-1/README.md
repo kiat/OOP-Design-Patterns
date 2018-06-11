@@ -91,3 +91,21 @@ or
 ```bash
 mvn findbugs:findbugs
 ```
+
+# Run Checkstyle 
+
+To analyse this example using CheckStyle run 
+
+```bash
+mvn checkstyle:check
+```
+
+
+CheckStyle code styling configuration files are in config/ directory. Maven checkstyle plugin is set to use google code style. You can change it to other styles like sun checkstyle. 
+
+
+
+
+
+
+
