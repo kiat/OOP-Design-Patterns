@@ -68,11 +68,18 @@ Explained Simply**](https://sourcemaking.com/design-patterns-ebook)
 1. http://java-design-patterns.com
 List of Software Design Patterns with examples in Java
 http://java-design-patterns.com/patterns/
+
+
 2. http://www.oodesign.com/
 This website is an older websites. It provides a good list of the main
 design patterns, description of them, examples and their UML diagrams.
+
+
 3. https://sourcemaking.com/design_patterns
 A professional Website with good different examples. If you are looking for different examples for each patterns than the classic examples. This site is a good source.
+
+4. List of Software Design Patterns on Wikipedia 
+https://en.wikipedia.org/wiki/Category:Software_design_patterns
 
 ---
 ## MOOCs
