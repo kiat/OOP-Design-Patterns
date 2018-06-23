@@ -43,8 +43,8 @@ public class StockMarketCentralSystem implements StockMarketSubject {
 		}
 
 		// A nice parallel implementation in Java 8 can be
-		observerList.parallelStream()
-				.forEach(a -> a.update(stockData.getStockName(), stockData.getLastPrice(), stockData.getVolume()));
+		// observerList.parallelStream()
+		//		.forEach(a -> a.update(stockData.getStockName(), stockData.getLastPrice(), stockData.getVolume()));
 
 	}
 
