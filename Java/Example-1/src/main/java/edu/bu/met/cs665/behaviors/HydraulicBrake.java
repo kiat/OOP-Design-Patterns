@@ -6,6 +6,9 @@ import edu.bu.met.cs665.meansoftransportation.MeansOfTransportation;
 
 public class HydraulicBrake implements BrakeBehavior {
 
+  /**
+   * An example implementation of brake implementation.
+   */
   @Override
   public boolean brake(MeansOfTransportation mot, double reducedSpeed) {
 

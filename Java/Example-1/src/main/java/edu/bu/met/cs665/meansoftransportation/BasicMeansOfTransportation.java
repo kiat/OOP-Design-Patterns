@@ -14,7 +14,7 @@ public class BasicMeansOfTransportation implements MeansOfTransportation {
   protected double speed = 0d;
 
   /**
-   * Reduces the speed to the given speed
+   * Reduces the speed to the given speed.
    */
   public void applyBrake(double speed) {
 

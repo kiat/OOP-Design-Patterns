@@ -3,12 +3,17 @@ package edu.bu.met.cs665;
 import edu.bu.met.cs665.behaviors.HydraulicBrake;
 import edu.bu.met.cs665.meansoftransportation.EconomyCar;
 import edu.bu.met.cs665.meansoftransportation.FighterJet;
-import edu.bu.met.cs665.meansoftransportation.FullSizeSUV;
+import edu.bu.met.cs665.meansoftransportation.FullSizeSuv;
 import edu.bu.met.cs665.meansoftransportation.MeansOfTransportation;
 import edu.bu.met.cs665.meansoftransportation.SpeedBoat;
 
 public class Main {
 
+  /**
+   * Here we execute some examples and illustrate the strategy pattern.
+   * 
+   * @param args not used. 
+   */
   public static void main(String[] args) {
 
     System.out.println("Economy Car \n");
@@ -22,7 +27,7 @@ public class Main {
 
     // Create a SUV Vehicle
     System.out.println("SUV \n");
-    MeansOfTransportation suvCar = new FullSizeSUV();
+    MeansOfTransportation suvCar = new FullSizeSuv();
     suvCar.setSpeed(120d); // run with 120 MPH
     suvCar.applyBrake(10d); // This will invoke class "BrakeWithABS" and reduces the speed to 10 MPH
 

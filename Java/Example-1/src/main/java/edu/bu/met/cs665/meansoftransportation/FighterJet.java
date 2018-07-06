@@ -4,6 +4,9 @@ import edu.bu.met.cs665.behaviors.BrakeParachute;
 
 public class FighterJet extends Airplane {
 
+  /**
+   * Instantiate a default fighter jet.
+   */
   public FighterJet() {
     super();
 
@@ -13,6 +16,9 @@ public class FighterJet extends Airplane {
     this.additionalBrakeBehavior = new BrakeParachute();
   }
 
+  /**
+   * A setter method with checks. 
+   */
   @Override
   public boolean setSpeed(double speed) {
     if (speed < 600) {

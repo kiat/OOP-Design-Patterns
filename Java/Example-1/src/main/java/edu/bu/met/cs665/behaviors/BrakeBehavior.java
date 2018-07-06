@@ -3,9 +3,7 @@ package edu.bu.met.cs665.behaviors;
 import edu.bu.met.cs665.meansoftransportation.MeansOfTransportation;
 
 /**
- * 
  * This interface represents the brake behavior.
- *
  */
 
 public interface BrakeBehavior {

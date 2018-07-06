@@ -1,11 +1,11 @@
 package edu.bu.met.cs665.meansoftransportation;
 
-import edu.bu.met.cs665.behaviors.BrakeWithABS;
+import edu.bu.met.cs665.behaviors.BrakeWithAbs;
 
-public class FullSizeSUV extends BasicMeansOfTransportation {
+public class FullSizeSuv extends BasicMeansOfTransportation {
 
-  public FullSizeSUV() {
-    this.brakeBehavior = new BrakeWithABS();
+  public FullSizeSuv() {
+    this.brakeBehavior = new BrakeWithAbs();
     this.setName("Full Size SUV");
   }
 

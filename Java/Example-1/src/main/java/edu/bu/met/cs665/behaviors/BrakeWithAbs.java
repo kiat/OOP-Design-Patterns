@@ -3,9 +3,11 @@ package edu.bu.met.cs665.behaviors;
 import edu.bu.met.cs665.meansoftransportation.MeansOfTransportation;
 
 // This class represents brake with Anti Block System (ABS)
-public class BrakeWithABS implements BrakeBehavior {
+public class BrakeWithAbs implements BrakeBehavior {
 
-
+  /**
+   * An example implementation of brake implementation.
+   */
   @Override
   public boolean brake(MeansOfTransportation mot, double reducedSpeed) {
 

@@ -17,7 +17,7 @@ public interface MeansOfTransportation {
   // getter and setter methods for name.
   public String getName();
 
-  public void setName(String Name);
+  public void setName(String name);
 
   // getter and setter for speed
   public double getSpeed();

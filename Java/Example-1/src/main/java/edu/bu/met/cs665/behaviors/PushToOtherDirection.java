@@ -6,6 +6,9 @@ import edu.bu.met.cs665.meansoftransportation.MeansOfTransportation;
 
 public class PushToOtherDirection implements BrakeBehavior {
 
+  /**
+   * An example implementation of brake implementation.
+   */
   public boolean brake(MeansOfTransportation mot, double reducedSpeed) {
 
     // Brake can work when the speed is under 20 MPH
