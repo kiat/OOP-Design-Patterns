@@ -2,12 +2,28 @@ package edu.bu.met.cs665.Observie;
 
 import edu.bu.met.cs665.Observer.StockMarketObserver;
 
+/**
+ * This interface specifies a simple obeservee or Subject in Observer Pattern.
+ */
 public interface StockMarketSubject {
-	
-	public void registerObserver(StockMarketObserver o);
 
-	public void removeObserver(StockMarketObserver o);
+  /**
+   * Register an observer to our list of observers.
+   * 
+   * @param o the observer object
+   */
+  public void registerObserver(StockMarketObserver o);
 
-	public void notifyObservers();
-	
+  /**
+   * remove an observer from our observer list.
+   * 
+   * @param o
+   */
+  public void removeObserver(StockMarketObserver o);
+
+  /**
+   * Notify all observers.
+   */
+  public void notifyObservers();
+
 }

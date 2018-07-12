@@ -13,12 +13,12 @@ public class Main {
 
 		StockMarketCentralSystem centralSystem = new StockMarketCentralSystem();
 		
-		StockMarketObserver  custome_1 = new CustomerDevice();
+		StockMarketObserver  customer_1 = new CustomerDevice();
 		StockMarketObserver  company_1 = new CompanyDevice();
 		StockMarketObserver  broker_1 = new BrokerDevice();
 
 		
-		centralSystem.registerObserver(custome_1);
+		centralSystem.registerObserver(customer_1);
 		centralSystem.registerObserver(company_1);
 		centralSystem.registerObserver(broker_1);
 

@@ -1,48 +1,86 @@
 package edu.bu.met.cs665.Observie;
 
 /**
- * This Class Represents a single stock market share data. 
- * 
- * @author kiat
+ * This Class Represents a single stock market share data.
  *
+ * @author kiat
  */
 public class StockMarketData {
-	
-	private String stockName;
-	private float lastPrice;
-	private float volume;
 
-	public StockMarketData() {
-	}
-	
-	public StockMarketData(String stockName, float lastPrice, float volume) {
-		this.stockName = stockName;
-		this.lastPrice = lastPrice;
-		this.volume = volume;
-	}
+  private String stockName;
+  private float lastPrice;
+  private float volume;
 
-	public String getStockName() {
-		return stockName;
-	}
+  /**
+   * A default constructor.
+   */
+  public StockMarketData() {}
 
-	public void setStockName(String stockName) {
-		this.stockName = stockName;
-	}
+  /**
+   * Create A stock market data item based on attributes.
+   * 
+   * @param stockName stock symbol
+   * @param lastPrice last handle price
+   * @param volume handle volume
+   */
+  public StockMarketData(String stockName, float lastPrice, float volume) {
+    this.stockName = stockName;
+    this.lastPrice = lastPrice;
+    this.volume = volume;
+  }
 
-	public float getLastPrice() {
-		return lastPrice;
-	}
+  /**
+   * Getter method for stock name.
+   * 
+   * @return stock name
+   */
+  public String getStockName() {
+    return stockName;
+  }
 
-	public void setLastPrice(float lastPrice) {
-		this.lastPrice = lastPrice;
-	}
+  /**
+   * A setter method for stock name.
+   * 
+   * @param stockName stock symbol
+   */
+  public void setStockName(String stockName) {
+    this.stockName = stockName;
+  }
 
-	public float getVolume() {
-		return volume;
-	}
+  /**
+   * Getter for the stock price
+   * 
+   * @return last price
+   */
+  public float getLastPrice() {
+    return lastPrice;
+  }
 
-	public void setVolume(float volume) {
-		this.volume = volume;
-	}
+  /**
+   * setter method for the last price.
+   * 
+   * @param lastPrice latest price
+   */
+  public void setLastPrice(float lastPrice) {
+    this.lastPrice = lastPrice;
+  }
+
+  /**
+   * Getter for handle volume.
+   * 
+   * @return last volume
+   */
+  public float getVolume() {
+    return volume;
+  }
+
+  /**
+   * setter method for the handle volume
+   * 
+   * @param volume last handle volume
+   */
+  public void setVolume(float volume) {
+    this.volume = volume;
+  }
 
 }
