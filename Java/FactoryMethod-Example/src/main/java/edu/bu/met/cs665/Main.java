@@ -15,14 +15,22 @@ public class Main {
    * @param args not used
    */
   public static void main(String[] args) {
-
+    
+    // NOTE: Setting the log4j property should not be here.
+    // It should be passed better by the JVM arguments.
+    // Like -Dlog4j.configuration={path to the log4j.properties config file}
     PropertyConfigurator.configure("log4j.properties");
 
+    
+    // Now we use the factory to generate a checking account. 
     BankAccount myCheckingAccount = AccountFacory.createAccount("checking");
 
 
-    logger.info(
-        "Bank Account " + myCheckingAccount.getAccountName() + " is created");
-  }
+    logger.info("Bank Account " + myCheckingAccount.getAccountName() + " is created");
+    
+    // Now we use the factory to generate a checking account. 
+    BankAccount mySavingAccount = AccountFacory.createAccount("saving");
 
+    logger.info("Bank Account " + mySavingAccount.getAccountName() + " is created");
+  }
 }
