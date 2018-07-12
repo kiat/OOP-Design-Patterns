@@ -3,6 +3,7 @@ package edu.bu.met.cs665;
 import static org.junit.Assert.assertTrue;
 
 import org.apache.log4j.PropertyConfigurator;
+import org.junit.Before;
 import org.junit.Test;
 
 import edu.bu.met.cs665.bankacounts.AccountBundle;
@@ -14,17 +15,21 @@ public class TestBankAccounts {
 	public TestBankAccounts() {
 
 	}
+	
+    // e.g. Creating an similar object and share for all @Test
+    @Before
+    public void runBeforeTestMethod() {
+		// NOTE: Setting the log4j property should not be here.
+		// It should be passed better by the JVM arguments.
+		// Like -Dlog4j.configuration={path to the log4j.properties config file}
+		PropertyConfigurator.configure("log4j.properties");
+    }
 
 	/**
 	 * A test for personal bank account bundle.
 	 */
 	@Test
 	public void personalBankAccountBundleTest() {
-
-		// NOTE: Setting the log4j property should not be here.
-		// It should be passed better by the JVM arguments.
-		// Like -Dlog4j.configuration={path to the log4j.properties config file}
-		PropertyConfigurator.configure("log4j.properties");
 
 		// Actual test starts here.
 		AccountBundle bundle = AccountFacory.createAccountBundle("personal");
@@ -41,12 +46,6 @@ public class TestBankAccounts {
 	 */
 	@Test
 	public void corporateBankAccountBundleTest() {
-
-		// NOTE: Setting the log4j property should not be here.
-		// It should be passed better by the JVM arguments.
-		// Like -Dlog4j.configuration={path to the log4j.properties config file}
-		PropertyConfigurator.configure("log4j.properties");
-
 		// Actual test starts here.
 		AccountBundle bundle = AccountFacory.createAccountBundle("corporate");
 
