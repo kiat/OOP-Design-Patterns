@@ -3,12 +3,12 @@ package edu.bu.met.cs665;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+import edu.bu.met.cs665.Observable.StockMarketCentralSystem;
+import edu.bu.met.cs665.Observable.StockMarketData;
 import edu.bu.met.cs665.Observer.BasicDisplay;
 import edu.bu.met.cs665.Observer.BrokerDevice;
 import edu.bu.met.cs665.Observer.CompanyDevice;
 import edu.bu.met.cs665.Observer.CustomerDevice;
-import edu.bu.met.cs665.Observie.StockMarketCentralSystem;
-import edu.bu.met.cs665.Observie.StockMarketData;
 
 
 

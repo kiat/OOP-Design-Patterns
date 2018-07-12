@@ -1,4 +1,4 @@
-package edu.bu.met.cs665.Observie;
+package edu.bu.met.cs665.Observable;
 
 /**
  * This Class Represents a single stock market share data.

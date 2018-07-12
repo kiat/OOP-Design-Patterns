@@ -1,4 +1,4 @@
-package edu.bu.met.cs665.Observie;
+package edu.bu.met.cs665.Observable;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package edu.bu.met.cs665.Observie;
+package edu.bu.met.cs665.Observable;
 
 import edu.bu.met.cs665.Observer.StockMarketObserver;
 
