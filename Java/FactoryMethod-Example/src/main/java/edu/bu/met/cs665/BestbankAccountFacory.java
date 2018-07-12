@@ -5,9 +5,9 @@ import edu.bu.met.cs665.bankacounts.BankAccount;
 import edu.bu.met.cs665.bankacounts.CheckingAcount;
 import edu.bu.met.cs665.bankacounts.SavingAccount;
 
-public class AccountFacory {
+public class BestbankAccountFacory  implements AccountFactory {
 
-  private static Logger logger = Logger.getLogger(AccountFacory.class);
+  private static Logger logger = Logger.getLogger(BestbankAccountFacory.class);
 
   /**
    * This is a factory method that creates the objects. Just let us know which account you like to have and do not care about the details how we create accounts.
@@ -15,7 +15,7 @@ public class AccountFacory {
    * @param type type of the bank account to create
    * @return a bank account
    */
-  public static BankAccount createAccount(String type) {
+  public BankAccount createAccount(String type) {
 
     BankAccount account = null;
 

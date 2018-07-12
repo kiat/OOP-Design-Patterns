@@ -5,7 +5,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 /**
- * This class represents a bank acount. 
+ * This class represents a bank account. 
  * @author Kia
  *
  */
@@ -36,7 +36,7 @@ public abstract class BankAccount {
   }
 
   /**
-   * Sets the acount name.
+   * Sets the account name.
    * 
    * @param accountName name of the account 
    */
@@ -45,7 +45,7 @@ public abstract class BankAccount {
   }
 
   /**
-   * Get the acount owner name.
+   * Get the account owner name.
    * 
    * @return
    */
@@ -56,7 +56,7 @@ public abstract class BankAccount {
   /**
    * Sets the owner name.
    * 
-   * @param ownerName name of the owne of the bank account
+   * @param ownerName name of the own of the bank account
    */
   public void setOwnerName(String ownerName) {
     this.ownerName = ownerName;
@@ -72,7 +72,7 @@ public abstract class BankAccount {
   }
 
   /**
-   * Set the bank acount balance to an amount.
+   * Set the bank account balance to an amount.
    * 
    * @param amountInUsd current balance of the account for example 
    */

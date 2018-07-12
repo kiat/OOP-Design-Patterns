@@ -24,13 +24,14 @@ public class Main {
 
     
     // Now we use the factory to generate a checking account. 
-    BankAccount myCheckingAccount = AccountFacory.createAccount("checking");
+    AccountFactory accountCreator=new BestbankAccountFacory();
+    BankAccount myCheckingAccount = accountCreator.createAccount("checking");
 
 
     logger.info("Bank Account " + myCheckingAccount.getAccountName() + " is created");
     
     // Now we use the factory to generate a checking account. 
-    BankAccount mySavingAccount = AccountFacory.createAccount("saving");
+    BankAccount mySavingAccount = accountCreator.createAccount("saving");
 
     logger.info("Bank Account " + mySavingAccount.getAccountName() + " is created");
   }
