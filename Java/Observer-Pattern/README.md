@@ -2,12 +2,14 @@
 In this example, we have central stock market system that has data about stock market. 
 Multiple parties need to get the data and show the data on their devices/displays. 
 
+We have frequently changing data and we have to broadcast the data to all of
+observers. 
 
 # Basic Idea and Concepts 
 
-Observerable is StockMarketCentraSystem 
+Observable/Subject is the StockMarketCentralSystem 
 
-Observers are BrockerDevice, CompanyDevice, CustomerDevice. 
+Observers are BrockerDevice, CompanyDevice and CustomerDevice. 
 
 
 
