@@ -20,7 +20,7 @@ public class TestBankAccounts {
     // NOTE: Setting the log4j property should not be here.
     // It should be passed better by the JVM arguments.
     // Like -Dlog4j.configuration={path to the log4j.properties config file}
-  //   PropertyConfigurator.configure("log4j.properties");
+     PropertyConfigurator.configure("log4j.properties");
 
     // Actual test starts here.
     AccountFactory accountCreator=new BestbankAccountFacory();
@@ -29,7 +29,7 @@ public class TestBankAccounts {
 
     // names should be correct.
     // assume if the names are correct the correct objects are created.
-  //   assertEquals(account.getAccountName(),  "CheckingAcount");
+     assertEquals(account.getAccountName(),  "CheckingAcount");
   }
   
 
@@ -40,7 +40,7 @@ public class TestBankAccounts {
     // NOTE: Setting the log4j property should not be here.
     // It should be passed better by the JVM arguments.
     // Like -Dlog4j.configuration={path to the log4j.properties config file}
-   // PropertyConfigurator.configure("log4j.properties");
+    PropertyConfigurator.configure("log4j.properties");
 
     // Actual test starts here.
     AccountFactory accountCreator=new BestbankAccountFacory();
@@ -48,7 +48,7 @@ public class TestBankAccounts {
 
     // names should be correct.
     // assume if the names are correct the correct objects are created.
-   //  assertEquals(account.getAccountName() , "SavingAccount");
+    assertEquals(account.getAccountName() , "SavingAccount");
   }
 
   
