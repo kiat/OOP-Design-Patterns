@@ -1,9 +1,8 @@
 package edu.bu.met.cs665;
 
-import edu.bu.met.cs665.bankacounts.BankAccount;
-
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import edu.bu.met.cs665.bankacounts.AccountBundle;
 
 
 public class Main {
@@ -16,13 +15,28 @@ public class Main {
    */
   public static void main(String[] args) {
 
+    // TODO
+    // NOTE: Setting the log4j property should not be here.
+    // It should be passed better by the JVM arguments.
+    // Like -Dlog4j.configuration={path to the log4j.properties config file}
     PropertyConfigurator.configure("log4j.properties");
 
-    BankAccount myCheckingAccount = AccountFacory.createAccount("checking");
 
+    AccountBundle bundlePersonal = AccountFacory.createAccountBundle("personal");
+    logger.info("Bank Account " + bundlePersonal.getCheckingAccount().getAccountName() + " is created");
+    logger.info("Bank Account " + bundlePersonal.getSavingAccount().getAccountName() + " is created");
 
-    logger.info(
-        "Bank Account " + myCheckingAccount.getAccountName() + " is created");
+    AccountBundle bundleCorporate = AccountFacory.createAccountBundle("corporate");
+
+    logger.info("Bank Account " + bundleCorporate.getCheckingAccount().getAccountName() + " is created");
+    logger.info("Bank Account " + bundleCorporate.getSavingAccount().getAccountName() + " is created");
+
+    // This line should generate an ERROR in Log
+    AccountBundle bundleUnknown = AccountFacory.createAccountBundle("Unknown");
+      if(bundleUnknown==null)
+        ;
+  
+    
   }
 
 }

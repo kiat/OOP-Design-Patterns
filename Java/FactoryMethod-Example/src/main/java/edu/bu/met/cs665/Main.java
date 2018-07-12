@@ -15,7 +15,8 @@ public class Main {
    * @param args not used
    */
   public static void main(String[] args) {
-    
+
+    // TODO
     // NOTE: Setting the log4j property should not be here.
     // It should be passed better by the JVM arguments.
     // Like -Dlog4j.configuration={path to the log4j.properties config file}
