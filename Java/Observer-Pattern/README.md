@@ -23,7 +23,7 @@ Use Apache Maven to compile and run this project
 mvn clean compile
 ```
 
-# How to create a binary runable package 
+# How to create a binary runnable package 
 
 
 ```bash
@@ -75,18 +75,12 @@ mvn findbugs:findbugs
 
 # Run Checkstyle 
 
-To analyse this example using CheckStyle run 
+To analyze this example using CheckStyle run 
 
 ```bash
 mvn checkstyle:check
 ```
 
 
-CheckStyle code styling configuration files are in config/ directory. Maven checkstyle plugin is set to use google code style. You can change it to other styles like sun checkstyle. 
-
-
-
-
-
-
-
+CheckStyle code styling configuration files are in config/ directory. Maven checkstyle plugin is set to use google code style. 
+You can change it to other styles like sun checkstyle. 
