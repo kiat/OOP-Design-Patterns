@@ -11,7 +11,7 @@ public class CheckingAcount extends BankAccount {
    * Create an instance of Checking Account. 
    */
   public CheckingAcount() {
-    this.accountName = "ChecingAcount";
+    this.accountName = "CheckingAcount";
     this.balance = 0d;
 
     // Add this account only to internal database.
