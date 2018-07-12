@@ -1,6 +1,27 @@
-# Project Template
+# Abstract Factory Pattern Example
 
-This is a Java Maven Project Template
+This project is an example of Factory Method Pattern in Java. 
+
+
+# Application Scenario 
+
+In Banks we have different kind of bank accounts. For example we have Checking accounts and Saving accounts. 
+When these accounts should be created different background processes in the bank finance system is triggered. 
+
+For example different kind of data are added to different databases of the bank or different brokers are informed about 
+creation of the new account. 
+
+These sub-processes can be different based on the type of the Bank Accounts (Checking and Saving accounts). 
+
+When a customer comes to the bank and asks for a checking account, we want to provide a simple method that he can call and say 
+"Checking" or "Saving" accounts are need without the need to know about the internal processes of the bank. 
+
+We have specific personal checking and saving accounts and we have specific 
+checking and saving accounts for corporate customers.
+
+The bank provides bundle accounts out of checking and saving accounts for personal and corporate customers. 
+When a bundle for a personal account is created then both saving and checking accounts should be personal accounts. 
+For corporate customers both of them are corporate customers.  
 
 
 
@@ -16,7 +37,7 @@ Type on the command line:
 mvn clean compile
 ```
 
-# How to create a binary runable package 
+# How to create a binary runnable package 
 
 
 ```bash
@@ -58,18 +79,12 @@ mvn findbugs:findbugs
 
 # Run Checkstyle 
 
-To analyse this example using CheckStyle run 
+To analyze this example using CheckStyle run 
 
 ```bash
 mvn checkstyle:check
 ```
 
 
-CheckStyle code styling configuration files are in config/ directory. Maven checkstyle plugin is set to use google code style. You can change it to other styles like sun checkstyle. 
-
-
-
-
-
-
-
+CheckStyle code styling configuration files are in config/ directory. Maven checkstyle plugin is set to use google code style. 
+You can change it to other styles like sun checkstyle. 
