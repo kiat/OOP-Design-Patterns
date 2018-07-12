@@ -3,7 +3,7 @@ package edu.bu.met.cs665.Observable;
 import edu.bu.met.cs665.Observer.StockMarketObserver;
 
 /**
- * This interface specifies a simple obeservee or Subject in Observer Pattern.
+ * This interface specifies a simple Observable or Subject in Observer Pattern.
  */
 public interface StockMarketSubject {
 
