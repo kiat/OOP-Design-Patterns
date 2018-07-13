@@ -1,4 +1,5 @@
-import observer.*;
+package edu.bu.met.cs665;
+import edu.bu.met.cs665.example1.*;
 
 public class Main {
 	

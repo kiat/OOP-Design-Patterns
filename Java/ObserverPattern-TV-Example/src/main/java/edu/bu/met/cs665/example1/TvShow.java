@@ -1,4 +1,4 @@
-package observer;
+package edu.bu.met.cs665.example1;
 
 import java.util.ArrayList;
 
