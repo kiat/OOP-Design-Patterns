@@ -1,10 +1,11 @@
-package test;
+package edu.bu.met.cs665;
 
 import org.junit.Assert;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
-import observer.Person;
-import observer.TvShow;
+import edu.bu.met.cs665.example1.Person;
+import edu.bu.met.cs665.example1.TvShow;
 
 public class ObserverTest {
 	
