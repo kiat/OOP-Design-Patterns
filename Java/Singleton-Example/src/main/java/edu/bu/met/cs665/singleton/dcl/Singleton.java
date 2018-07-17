@@ -20,4 +20,11 @@ public class Singleton {
 		}
 		return uniqueInstance;
 	}
+	
+	// other useful methods here
+	public String getDescription() {
+		return "I'm a volatile static Singleton!";
+	}
+	
+	
 }
