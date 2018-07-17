@@ -1,0 +1,174 @@
+DEBUG main edu.bu.met.cs665.AccountFacory - Account Factory: Ok, I undersand the type of account. Personal Account.
+DEBUG main edu.bu.met.cs665.AccountFacory - Account Factory: I started to create the accounts.
+INFO main edu.bu.met.cs665.taxAccounts.CheckingAcount - Created a Checking Account
+INFO main edu.bu.met.cs665.taxAccounts.SavingAccount - Created a SavingAccount Account
+INFO main edu.bu.met.cs665.AccountFacory - Bank account bundles created for personal use. 
+INFO main edu.bu.met.cs665.Main - Bank Account PersonalCheckingAccount is created
+INFO main edu.bu.met.cs665.Main - Bank Account PersonalSavingAccount is created
+DEBUG main edu.bu.met.cs665.AccountFacory - Account Factory: Ok, I undersand the type of account. Corporate Accounts.
+DEBUG main edu.bu.met.cs665.AccountFacory - Account Factory: I started to create the accounts.
+INFO main edu.bu.met.cs665.taxAccounts.CorporateCheckingAcount - Created a Corporate Checking Account
+INFO main edu.bu.met.cs665.taxAccounts.CorporateSavingAccount - Created a Corporate Saving Account Account
+INFO main edu.bu.met.cs665.AccountFacory - Bank account bundles created for personal use. 
+INFO main edu.bu.met.cs665.Main - Bank Account CorporateChecingAccount is created
+INFO main edu.bu.met.cs665.Main - Bank Account CorporateSavingAccount is created
+ERROR main edu.bu.met.cs665.AccountFacory - I do not know about this type of accounts.
+ERROR main edu.bu.met.cs665.taxpayerFactory - I do not know about this type of accounts.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Creating CPA Account.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Checking User Permission for CPA account.
+INFO main edu.bu.met.cs665.taxAccounts.AdminUser - Created Admin User account
+INFO main edu.bu.met.cs665.taxpayerFactory - Bank account bundles created for personal use. 
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Tax Factory: Checking for trustee type. 
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Created Trustee Account.
+INFO main edu.bu.met.cs665.taxAccounts.Trustee - Created a Trustee TaxType for SSN: Trustee
+INFO main edu.bu.met.cs665.taxpayerFactory - Trustee Account has been created. 
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Creating CPA Account.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Checking User Permission for CPA account.
+INFO main edu.bu.met.cs665.taxAccounts.AdminUser - Created Admin User account
+INFO main edu.bu.met.cs665.taxpayerFactory - Bank account bundles created for personal use. 
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Tax Factory: Checking for trustee type. 
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Created Trustee Account.
+INFO main edu.bu.met.cs665.taxAccounts.Trustee - Created a Trustee TaxType for SSN: Trustee
+INFO main edu.bu.met.cs665.taxpayerFactory - Trustee Account has been created. 
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Creating CPA Account.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Checking User Permission for CPA account.
+INFO main edu.bu.met.cs665.taxAccounts.CPA - Created CPA Account
+INFO main edu.bu.met.cs665.taxpayerFactory - Bank account bundles created for personal use. 
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Tax Factory: Checking for trustee type. 
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Created Trustee Account.
+INFO main edu.bu.met.cs665.taxAccounts.Trustee - Created Trustee
+INFO main edu.bu.met.cs665.taxpayerFactory - Trustee Account has been created. 
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Creating CPA Account.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Checking User Permission for CPA account.
+INFO main edu.bu.met.cs665.taxAccounts.CPA - Created CPA Account
+INFO main edu.bu.met.cs665.taxpayerFactory - Bank account bundles created for personal use. 
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Creating CPA Account.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Checking User Permission for CPA account.
+INFO main edu.bu.met.cs665.taxAccounts.CPA - Created CPA Account
+INFO main edu.bu.met.cs665.taxpayerFactory - Bank account bundles created for personal use. 
+INFO main edu.bu.met.cs665.Main - Bank Account null is created
+INFO main edu.bu.met.cs665.Main - Tax Returns Count: 0
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Tax Factory: Checking for trustee type. 
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Created Trustee Account.
+INFO main edu.bu.met.cs665.taxAccounts.Trustee - Created Trustee
+INFO main edu.bu.met.cs665.taxpayerFactory - Trustee Account has been created. 
+INFO main edu.bu.met.cs665.Main - Bank Account Trustee is created
+INFO main edu.bu.met.cs665.Main - Tax Returns Count: 0
+ERROR main edu.bu.met.cs665.taxpayerFactory - I do not know about this type of accounts.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Creating CPA Account.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Checking User Permission for CPA account.
+INFO main edu.bu.met.cs665.taxAccounts.CPA - Created CPA Account
+INFO main edu.bu.met.cs665.taxpayerFactory - Bank account bundles created for personal use. 
+INFO main edu.bu.met.cs665.Main - Bank Account null is created
+INFO main edu.bu.met.cs665.Main - Tax Returns Count: 0
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Tax Factory: Checking for trustee type. 
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Created Trustee Account.
+INFO main edu.bu.met.cs665.taxAccounts.Trustee - Created Trustee
+INFO main edu.bu.met.cs665.taxpayerFactory - Trustee Account has been created. 
+INFO main edu.bu.met.cs665.Main - Bank Account Trustee is created
+INFO main edu.bu.met.cs665.Main - Tax Returns Count: 0
+ERROR main edu.bu.met.cs665.taxpayerFactory - I do not know about this type of accounts.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Creating CPA Account.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Checking User Permission for CPA account.
+INFO main edu.bu.met.cs665.taxAccounts.CPA - Created CPA Account
+INFO main edu.bu.met.cs665.taxpayerFactory - CPA account bundle has been created .
+INFO main edu.bu.met.cs665.Main - Bank Account null is created
+INFO main edu.bu.met.cs665.Main - Tax Returns Count: 0
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Tax Factory: Checking for trustee type. 
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Created Trustee Account.
+INFO main edu.bu.met.cs665.taxAccounts.Trustee - Created Trustee
+INFO main edu.bu.met.cs665.taxpayerFactory - Trustee Account has been created. 
+INFO main edu.bu.met.cs665.Main - Bank Account Trustee is created
+INFO main edu.bu.met.cs665.Main - Tax Returns Count: 0
+ERROR main edu.bu.met.cs665.taxpayerFactory - I do not know about this type of accounts.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Creating CPA Account.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Checking User Permission for CPA account.
+INFO main edu.bu.met.cs665.taxAccounts.CPA - Created CPA Account
+INFO main edu.bu.met.cs665.taxpayerFactory - CPA account bundle has been created .
+INFO main edu.bu.met.cs665.Main - Bank Account null is created
+INFO main edu.bu.met.cs665.Main - Tax Returns Count: 0
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Tax Factory: Checking for trustee type. 
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Created Trustee Account.
+INFO main edu.bu.met.cs665.taxAccounts.Trustee - Created Trustee
+INFO main edu.bu.met.cs665.taxpayerFactory - Trustee Account has been created. 
+INFO main edu.bu.met.cs665.Main - Bank Account Trustee is created
+INFO main edu.bu.met.cs665.Main - Tax Returns Count: 0
+ERROR main edu.bu.met.cs665.taxpayerFactory - I do not know about this type of accounts.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Creating CPA Account.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Checking User Permission for CPA account.
+INFO main edu.bu.met.cs665.taxAccounts.CPA - Successfully Created CPA Account
+INFO main edu.bu.met.cs665.taxpayerFactory - CPA account bundle has been created .
+INFO main edu.bu.met.cs665.Main - Taxpayer Account CPA is created
+INFO main edu.bu.met.cs665.Main - Tax Returns Count: 0
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Tax Factory: Checking for trustee type. 
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Created Trustee Account.
+INFO main edu.bu.met.cs665.taxAccounts.Trustee - Created Trustee
+INFO main edu.bu.met.cs665.taxpayerFactory - Trustee Account has been created. 
+INFO main edu.bu.met.cs665.Main - Taxpayer Account Trustee is created
+INFO main edu.bu.met.cs665.Main - Tax Returns Count: 0
+ERROR main edu.bu.met.cs665.taxpayerFactory - I do not know about this type of accounts.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Creating CPA Account.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Checking User Permission for CPA account.
+INFO main edu.bu.met.cs665.taxAccounts.CPA - Successfully Created CPA Account
+INFO main edu.bu.met.cs665.taxpayerFactory - CPA account bundle has been created .
+INFO main edu.bu.met.cs665.Main - CPA is created
+INFO main edu.bu.met.cs665.Main - Tax Returns Count: 0
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Tax Factory: Checking for trustee type. 
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Created Trustee Account.
+INFO main edu.bu.met.cs665.taxAccounts.Trustee - Created Trustee
+INFO main edu.bu.met.cs665.taxpayerFactory - Trustee Account has been created. 
+INFO main edu.bu.met.cs665.Main - Trustee is created
+INFO main edu.bu.met.cs665.Main - Tax Returns Count: 0
+ERROR main edu.bu.met.cs665.taxpayerFactory - I do not know about this type of accounts.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Creating CPA Account.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Checking User Permission for CPA account.
+INFO main edu.bu.met.cs665.taxAccounts.CPA - Has permission to create CPA Account
+INFO main edu.bu.met.cs665.taxpayerFactory - CPA account bundle has been created .
+INFO main edu.bu.met.cs665.Main - CPA is created
+INFO main edu.bu.met.cs665.Main - Tax Returns Count: 0
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Tax Factory: Checking for trustee type. 
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Created Trustee Account.
+INFO main edu.bu.met.cs665.taxAccounts.Trustee - Created Trustee
+INFO main edu.bu.met.cs665.taxpayerFactory - Trustee Account has been created. 
+INFO main edu.bu.met.cs665.Main - Trustee is created
+INFO main edu.bu.met.cs665.Main - Tax Returns Count: 0
+ERROR main edu.bu.met.cs665.taxpayerFactory - I do not know about this type of accounts.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Creating CPA Account.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Checking User Permission for CPA account.
+INFO main edu.bu.met.cs665.taxAccounts.CPA - Has permission to create CPA Account
+INFO main edu.bu.met.cs665.taxpayerFactory - CPA account bundle has been created .
+INFO main edu.bu.met.cs665.Main - CPA is created
+INFO main edu.bu.met.cs665.Main - Tax Returns Count: 0
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Tax Factory: Checking for trustee type. 
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Created Trustee Account.
+INFO main edu.bu.met.cs665.taxAccounts.Trustee - Has permission to create Trustee
+INFO main edu.bu.met.cs665.taxpayerFactory - Trustee Account has been created. 
+INFO main edu.bu.met.cs665.Main - Trustee is created
+INFO main edu.bu.met.cs665.Main - Tax Returns Count: 0
+ERROR main edu.bu.met.cs665.taxpayerFactory - I do not know about this type of accounts.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Creating CPA Account.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Checking User Permission for CPA account.
+INFO main edu.bu.met.cs665.taxAccounts.CPA - Has permission to create CPA Account
+INFO main edu.bu.met.cs665.taxpayerFactory - CPA account bundle has been created .
+INFO main edu.bu.met.cs665.Main - CPA bundle is created
+INFO main edu.bu.met.cs665.Main - Tax Returns Count: 0
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Tax Factory: Checking for trustee type. 
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Created Trustee Account.
+INFO main edu.bu.met.cs665.taxAccounts.Trustee - Has permission to create Trustee
+INFO main edu.bu.met.cs665.taxpayerFactory - Trustee Account has been created. 
+INFO main edu.bu.met.cs665.Main - Trustee bundle is created
+INFO main edu.bu.met.cs665.Main - Tax Returns Count: 0
+ERROR main edu.bu.met.cs665.taxpayerFactory - I do not know about this type of accounts.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Creating CPA Account.
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Checking User Permission for CPA account.
+INFO main edu.bu.met.cs665.taxAccounts.CPA - Has permission to create CPA Account
+INFO main edu.bu.met.cs665.taxpayerFactory - CPA account bundle has been created .
+INFO main edu.bu.met.cs665.Main - CPA bundle is created
+INFO main edu.bu.met.cs665.Main - Tax Returns Count: 0
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Tax Factory: Checking for trustee type. 
+DEBUG main edu.bu.met.cs665.taxpayerFactory - Account Factory: Created Trustee Account.
+INFO main edu.bu.met.cs665.taxAccounts.Trustee - Has permission to create Trustee
+INFO main edu.bu.met.cs665.taxpayerFactory - Trustee Account has been created. 
+INFO main edu.bu.met.cs665.Main - Trustee bundle is created
+INFO main edu.bu.met.cs665.Main - Tax Returns Count: 0
+ERROR main edu.bu.met.cs665.taxpayerFactory - I do not know about this type of accounts.
