@@ -5,5 +5,5 @@ mvn clean compile assembly:single
 
 
 # Run the main program 
-java -cp target/*.jar edu.bu.met.cs665.coffeecondiments.CoffeePriceCalMain
+java -cp target/*.jar edu.bu.met.cs665.Main
 
