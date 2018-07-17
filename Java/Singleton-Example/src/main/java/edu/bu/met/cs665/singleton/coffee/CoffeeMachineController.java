@@ -9,6 +9,9 @@ public class CoffeeMachineController {
 		coffeeMachine.drain();
 
 		// will return the same existing instance
-		CoffeMachine boiler2 = CoffeMachine.getInstance();
+		CoffeMachine coffeeMachine2 = CoffeMachine.getInstance();
+		coffeeMachine2.fill();
+		coffeeMachine2.brew();
+		coffeeMachine2.drain();
 	}
 }
