@@ -1,6 +1,9 @@
 package edu.bu.met.cs665.io;
 
-import java.io.*;
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 
 public class InputTest {
 	public static void main(String[] args) throws IOException {

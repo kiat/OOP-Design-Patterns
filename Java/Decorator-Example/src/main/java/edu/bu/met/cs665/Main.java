@@ -1,9 +1,15 @@
 package edu.bu.met.cs665;
 
-import edu.bu.met.cs665.example1.Person;
+import edu.bu.met.cs665.coffeecondiments.Beverage;
+import edu.bu.met.cs665.coffeecondiments.Decaf;
+import edu.bu.met.cs665.coffeecondiments.Espresso;
+import edu.bu.met.cs665.coffeecondiments.HouseBlend;
+import edu.bu.met.cs665.coffeecondiments.Milk;
+import edu.bu.met.cs665.coffeecondiments.Mocha;
+import edu.bu.met.cs665.coffeecondiments.Soy;
+import edu.bu.met.cs665.coffeecondiments.Suger;
+import edu.bu.met.cs665.coffeecondiments.Whip;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 
 public class Main {
 
@@ -11,14 +17,29 @@ public class Main {
    * A main method to run examples. 
    * @param args not used 
    */
-  public static void main(String[] args) {
+	 public static void main(String args[]) {
+		    
+		    // our first beverage. 
+		    Beverage beverage = new Espresso();
+		    System.out.println(beverage.getDescription() + " $" + beverage.cost());
 
-    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		    
+		    // A second beverage with 2 mocha and whip
+		    Beverage beverage2 = new Decaf();
+		    beverage2 = new Milk(beverage2);
+		    beverage2 = new Milk(beverage2);
+		    beverage2 = new Suger(beverage2);
+		    
+		    System.out.println(beverage2.getDescription() + " $" + beverage2.cost());
 
-    LocalDate xmas = LocalDate.parse("22/12/1994", formatter);
-    Person student = new Person("John", "Doe", xmas);
-
-    System.out.println(student.calculateAge());
-  }
+		    
+		    // A 3rd beverage with Soy Mocha and whip 
+		    Beverage beverage3 = new HouseBlend();
+		    beverage3 = new Soy(beverage3);
+		    beverage3 = new Mocha(beverage3);
+		    beverage3 = new Whip(beverage3);
+		    
+		    System.out.println(beverage3.getDescription() + " $" + beverage3.cost());
+		  }
 
 }

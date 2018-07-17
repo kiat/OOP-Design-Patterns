@@ -6,20 +6,30 @@ import java.io.InputStream;
 
 public class LowerCaseInputStream extends FilterInputStream {
 
-  public LowerCaseInputStream(InputStream in) {
-    super(in);
-  }
+	/**
+	 * 
+	 * @param in the inputStream to process 
+	 */
+	public LowerCaseInputStream(InputStream in) {
+		super(in);
+	}
 
-  public int read() throws IOException {
-    int c = in.read();
-    return (c == -1 ? c : Character.toLowerCase((char) c));
-  }
+	/**
+	 * reads the input stream and convert
+	 */
+	public int read() throws IOException {
+		int c = in.read();
+		return (c == -1 ? c : Character.toLowerCase((char) c));
+	}
 
-  public int read(byte[] b, int offset, int len) throws IOException {
-    int result = in.read(b, offset, len);
-    for (int i = offset; i < offset + result; i++) {
-      b[i] = (byte) Character.toLowerCase((char) b[i]);
-    }
-    return result;
-  }
+	/**
+	 * Read the byte array with an offset.
+	 */
+	public int read(byte[] b, int offset, int len) throws IOException {
+		int result = in.read(b, offset, len);
+		for (int i = offset; i < offset + result; i++) {
+			b[i] = (byte) Character.toLowerCase((char) b[i]);
+		}
+		return result;
+	}
 }
