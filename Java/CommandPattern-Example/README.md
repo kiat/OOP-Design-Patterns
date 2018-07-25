@@ -1,6 +1,5 @@
-# Project Template
-
-This is a Java Maven Project Template
+# Command Pattern Example
+This project is an example implementation of Command Design Pattern. 
 
 
 
