@@ -8,53 +8,60 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 
-
+/**
+ * This class is the main data loader. 
+ * As an example we load the customer data from CSV file. 
+ * @author Kia Teymourian
+ *
+ */
 public class RealDataReader implements DataAccess {
+	
 
-  String fileName;
+	private static Logger logger = Logger.getLogger(RealDataReader.class);
 
-  public RealDataReader(String fileName) {
-    this.fileName = fileName;
-  }
+	String fileName;
 
+	public RealDataReader(String fileName) {
+		this.fileName = fileName;
+	}
 
+	@Override
+	public List<Customer> getCustomerData() {
 
-  @Override
-  public List<Customer> getCustomerData() {
+		List<Customer> customerData = new ArrayList<Customer>();
 
-    List<Customer> customerData = new ArrayList<Customer>();
+		try {
 
-    try {
+			// we read the data from a CSV file and test the calculation methods with it.
+			URL url = this.getClass().getResource("/" + fileName);
+			File file = new File(url.getFile());
 
-      // we read the data from a CSV file and test the calculation methods with it.
-      URL url = this.getClass().getResource("/" + fileName);
-      File file = new File(url.getFile());
+			FileReader fileReader = new FileReader(file);
+			BufferedReader bufferedReader = new BufferedReader(fileReader);
 
+			// Read the data line by line and create customer objects
+			String line;
+			while ((line = bufferedReader.readLine()) != null) {
 
-      FileReader fileReader = new FileReader(file);
-      BufferedReader bufferedReader = new BufferedReader(fileReader);
+				String[] data = line.split(",");
 
-      String line;
-      while ((line = bufferedReader.readLine()) != null) {
+				// Each line is includes data about a single customer.
+				// Create customer objects 
+				Customer customer = new Customer(Long.parseLong(data[0]), data[1], data[2], Integer.parseInt(data[3]),
+						Integer.parseInt(data[4]));
+				// then add the customer objects to the customers list.
+				customerData.add(customer);
+			}
 
-        String[] data = line.split(",");
+			fileReader.close();
 
-        Customer customer = new Customer(Long.parseLong(data[0]), data[1],
-            data[2], Integer.parseInt(data[3]), Integer.parseInt(data[4]));
+		} catch (IOException e) {
+			logger.error("Can not read the Customer data", e);
+		}
 
-        customerData.add(customer);
-      }
-
-      fileReader.close();
-
-    } catch (IOException e) {
-      e.printStackTrace();
-    }
-
-
-
-    return customerData;
-  }
+		return customerData;
+	}
 
 }
