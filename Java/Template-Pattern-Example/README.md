@@ -5,25 +5,6 @@ Combination of Proxy and Template Method of Java Collections sort().
 
 # Application Scenario 
 
-In Banks we have different kind of bank accounts. For example we have Checking accounts and Saving accounts. 
-When these accounts should be created different background processes in the bank finance system is triggered. 
-
-For example different kind of data are added to different databases of the bank or different brokers are informed about 
-creation of the new account. 
-
-These sub-processes can be different based on the type of the Bank Accounts (Checking and Saving accounts). 
-
-When a customer comes to the bank and asks for a checking account, we want to provide a simple method that he can call and say 
-"Checking" or "Saving" accounts are need without the need to know about the internal processes of the bank. 
-
-We have specific personal checking and saving accounts and we have specific 
-checking and saving accounts for corporate customers.
-
-The bank provides bundle accounts out of checking and saving accounts for personal and corporate customers. 
-When a bundle for a personal account is created then both saving and checking accounts should be personal accounts. 
-For corporate customers both of them are corporate customers.  
-
-
 
 # How to compile the project
 
