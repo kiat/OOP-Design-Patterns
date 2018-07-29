@@ -12,21 +12,20 @@ public class UserStory {
 		this.toDoState = new TodoState(this);
 		this.doingState = new DoingState(this);
 		this.doneState = new DoneState(this);
-		
 		this.state = toDoState;
-		
 	}
 	
 	public void startWorkingOn() {
 		state.startWorkingOn();
 	}
+	
 	public void stopWorkingOn() {
 		state.stopWorkingOn();
 	}
+	
 	public void finishWorkingOn() {
 		state.finishWorkingOn();
 	}
-	
 	
 	public State getDoingState() {
 		return this.doingState;
