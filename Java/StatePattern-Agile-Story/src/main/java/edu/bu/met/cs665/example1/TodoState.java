@@ -11,7 +11,6 @@ public class TodoState implements State {
 	public void startWorkingOn() {
 		System.out.println("Great. You are working on something now.");
 		this.userStory.setState(userStory.getDoingState());
-		
 	}
 
 	public void stopWorkingOn() {
@@ -25,6 +24,4 @@ public class TodoState implements State {
 	public String toString() {
 		return "This is the TODO state..";
 	}
-
-
 }
