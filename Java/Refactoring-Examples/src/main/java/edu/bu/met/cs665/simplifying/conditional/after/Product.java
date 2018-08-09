@@ -27,7 +27,7 @@ public class Product {
 	}
 
 	// The above implementation is better understandable.
-	// HERE we should be carefull that we have implemented the same algorithm.
+	// HERE we should be careful that we have implemented the same algorithm.
 	// BEFORE it was
 
 	// Returns the total price for an order of this product.
