@@ -8,12 +8,12 @@
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>Example-1</name>
+	<name>AbstractFactory-Example</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<checkstyle.version>8.10.1</checkstyle.version>
+		<checkstyle.version>[8.18,)</checkstyle.version>
 		<checkstyle.plugin.version>2.17</checkstyle.plugin.version>
 		<sevntu.checkstyle.plugin.version>1.29.0</sevntu.checkstyle.plugin.version>
 
