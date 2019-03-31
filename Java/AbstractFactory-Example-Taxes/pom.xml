@@ -8,7 +8,7 @@
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>Example-1</name>
+	<name>AbstractFactory-Example-Taxes</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
