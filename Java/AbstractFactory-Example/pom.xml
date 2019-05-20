@@ -35,25 +35,29 @@
 	<build>
 
 		<plugins>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>exec-maven-plugin</artifactId>
-				<version>1.3</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>java</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<includeProjectDependencies>true</includeProjectDependencies>
-					<includePluginDependencies>true</includePluginDependencies>
-					<killAfter>-1</killAfter>
-					<mainClass>edu.rice.cs.topK.prepareData.LoadAndPrepareData</mainClass>
-					<cleanupDaemonThreads>false</cleanupDaemonThreads>
-				</configuration>
-			</plugin>
+
+                        <plugin>
+
+                                <groupId>org.codehaus.mojo</groupId>
+                                <artifactId>exec-maven-plugin</artifactId>
+                                <version>1.3</version>
+                                <executions>
+                                        <execution>
+                                                <goals>
+                                                        <goal>java</goal>
+                                                </goals>
+                                        </execution>
+                                </executions>
+                                <configuration>
+                                        <includeProjectDependencies>true</includeProjectDependencies>
+                                        <includePluginDependencies>true</includePluginDependencies>
+                                        <killAfter>-1</killAfter>
+                                        <mainClass>edu.bu.met.cs665.Main</mainClass>
+                                        <cleanupDaemonThreads>false</cleanupDaemonThreads>
+                                </configuration>
+                        </plugin>
+
+
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
