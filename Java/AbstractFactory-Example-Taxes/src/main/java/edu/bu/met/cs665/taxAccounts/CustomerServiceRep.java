@@ -18,7 +18,7 @@ public class CustomerServiceRep extends Taxpayer {
     this.addToInternalEmployeeList("CustomerService Rep");
 
     // Inform only internal brokers about this account.
-    this.addToInternalAuditLogs(this.taxpayerName+ " is logging in as Employee");
+    this.addToInternalAuditLogs(this.taxpayerName + " is logging in as Employee");
 
     logger.info("Customer Service Rep account");
 

@@ -2,10 +2,12 @@ package edu.bu.met.cs665.taxAccounts;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import org.apache.log4j.Logger;
 
 /**
- * Handles Taxpayer Details 
+ * Handles Taxpayer Details
+ * 
  * @author Sudakar S
  *
  */
@@ -14,9 +16,9 @@ public abstract class Taxpayer {
   protected String taxpayerType;
   protected String taxpayerName;
   protected Double taxDue;
-  
-  
-  
+
+
+
   // Will handle Different Types of Taxes
   protected List<String> taxTypes = new ArrayList<String>();
 
@@ -58,37 +60,33 @@ public abstract class Taxpayer {
   /**
    * Sets the taxpayer name.
    * 
-   * @param taxPayer name 
+   * @param taxPayer name
    */
   public void setTaxpayerName(String taxpayerName) {
     this.taxpayerName = taxpayerName;
   }
-  
-  public boolean isTrustee()
-  {
-	  // Placeholder: Core logic to decide whether trustee account can be created will be defined here
-	  return true;
-  }
-  
-  public boolean IsCPA()
-  {
-	// Placeholder: Core logic to decide whether CPA account can be created will be defined here
-	 return true;
+
+  public boolean isTrustee() {
+    // Placeholder: Core logic to decide whether trustee account can be created will be defined here
+    return true;
   }
 
-  public boolean IsEmployee()
-  {
-	  
-	// Placeholder: Core logic to decide whether Employee account can be created will be defined here
-	  return true;
+  public boolean isCpa() {
+    // Placeholder: Core logic to decide whether CPA account can be created will be defined here
+    return true;
   }
-  
-  public boolean IsAdmin()
-  {
-	// Placeholder: Core logic to decide whether Admin account can be created will be defined here
-	  return true;
+
+  public boolean IsEmployee() {
+
+    // Placeholder: Core logic to decide whether Employee account can be created will be defined here
+    return true;
   }
-  
+
+  public boolean IsAdmin() {
+    // Placeholder: Core logic to decide whether Admin account can be created will be defined here
+    return true;
+  }
+
   /**
    * Getter method.
    * 
@@ -101,7 +99,7 @@ public abstract class Taxpayer {
   /**
    * Set the bank account balance to an amount.
    * 
-   * @param amountInUsd current balance of the account for example 
+   * @param amountInUsd current balance of the account for example
    */
   public void setBalancetInUsd(Double amountInUsd) {
     this.taxDue = amountInUsd;

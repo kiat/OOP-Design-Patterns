@@ -8,12 +8,12 @@ public class Trustee extends Taxpayer {
   private static Logger logger = Logger.getLogger(Trustee.class);
 
   /**
-   * Creates an account of saving bank account. 
+   * Creates an account of saving bank account.
    */
   public Trustee() {
     this.taxpayerType = "Trustee";
     this.taxDue = 0d;
-    
+
     // Check for Trustee permission
     logger.info("Has permission to create " + this.getTaxpayerType());
 

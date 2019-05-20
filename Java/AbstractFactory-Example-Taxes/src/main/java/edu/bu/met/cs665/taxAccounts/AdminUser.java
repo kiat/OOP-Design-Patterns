@@ -8,7 +8,7 @@ public class AdminUser extends Taxpayer {
   private static Logger logger = Logger.getLogger(AdminUser.class);
 
   /**
-   * Create an instance of admin User Account. 
+   * Create an instance of admin User Account.
    */
   public AdminUser() {
     this.taxpayerType = "";

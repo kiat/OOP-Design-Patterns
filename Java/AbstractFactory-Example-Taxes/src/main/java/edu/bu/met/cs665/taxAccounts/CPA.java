@@ -8,7 +8,7 @@ public class CPA extends Taxpayer {
   private static Logger logger = Logger.getLogger(CPA.class);
 
   /**
-   * Create an instance of Checking Account. 
+   * Create an instance of Checking Account.
    */
   public CPA() {
     this.taxpayerType = "CPA";
