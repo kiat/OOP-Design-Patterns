@@ -1,25 +1,26 @@
 package edu.bu.met.cs665;
 
-import edu.bu.met.cs665.taxAccounts.CPA;
-import edu.bu.met.cs665.taxAccounts.CustomerServiceRep;
-import edu.bu.met.cs665.taxAccounts.TaxpayerBundle;
-import edu.bu.met.cs665.taxAccounts.Taxpayer;
-import edu.bu.met.cs665.taxAccounts.Trustee;
+import edu.bu.met.cs665.taxaccounts.Cpa;
+import edu.bu.met.cs665.taxaccounts.CustomerServiceRep;
+import edu.bu.met.cs665.taxaccounts.Taxpayer;
+import edu.bu.met.cs665.taxaccounts.TaxpayerBundle;
+import edu.bu.met.cs665.taxaccounts.Trustee;
 
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.log4j.Logger;
 
+
 public class TaxpayerFactory {
 
-  // We use here a logger instead of printing to system.out
+  // We use here a logger instead of printing to system.out.
   private static Logger logger = Logger.getLogger(TaxpayerFactory.class);
 
   /**
-   * This is a factory method that validates current user and creates specific sets of objects
-   * 
-   * Abstract factory hides the complexity of HOW/WHO is eligible to create specific typeofTaxPayer
-   * 
+   * This is a factory method that validates current user and creates specific sets of objects.
+   * <p>
+   * Abstract factory hides the complexity of HOW/WHO is eligible to create specific typeofTaxPayer.
+   * </p>
    * @param type taxPayer type to create
    * @return a taxpayer account
    */
@@ -54,7 +55,7 @@ public class TaxpayerFactory {
       logger.debug("Account Factory: Creating CPA Account.");
       logger.debug("Account Factory: Checking User Permission for CPA account.");
 
-      taxpayer = new CPA();
+      taxpayer = new Cpa();
 
       // This is just a place holder for tax returns.
       // Normally you would load the returns as an object with its own classes and
@@ -91,7 +92,7 @@ public class TaxpayerFactory {
     Taxpayer account = null;
 
     if (type.equals("CPA")) {
-      account = new CPA();
+      account = new Cpa();
     } else if (type.equals("Trustee")) {
       account = new Trustee();
     }

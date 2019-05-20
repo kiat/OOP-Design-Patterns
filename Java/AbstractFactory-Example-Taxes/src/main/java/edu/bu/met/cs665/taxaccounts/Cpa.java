@@ -1,16 +1,16 @@
-package edu.bu.met.cs665.taxAccounts;
+package edu.bu.met.cs665.taxaccounts;
 
 import org.apache.log4j.Logger;
 
-public class CPA extends Taxpayer {
+public class Cpa extends Taxpayer {
 
   // We use here a logger instead of printing to system.out
-  private static Logger logger = Logger.getLogger(CPA.class);
+  private static Logger logger = Logger.getLogger(Cpa.class);
 
   /**
    * Create an instance of Checking Account.
    */
-  public CPA() {
+  public Cpa() {
     this.taxpayerType = "CPA";
     this.taxDue = 0d;
 

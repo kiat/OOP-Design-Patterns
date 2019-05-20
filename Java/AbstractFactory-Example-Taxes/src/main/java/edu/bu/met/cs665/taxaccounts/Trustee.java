@@ -1,4 +1,4 @@
-package edu.bu.met.cs665.taxAccounts;
+package edu.bu.met.cs665.taxaccounts;
 
 import org.apache.log4j.Logger;
 

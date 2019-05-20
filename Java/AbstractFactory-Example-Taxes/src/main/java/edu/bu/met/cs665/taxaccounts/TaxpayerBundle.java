@@ -1,5 +1,4 @@
-package edu.bu.met.cs665.taxAccounts;
-
+package edu.bu.met.cs665.taxaccounts;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,8 +7,6 @@ public class TaxpayerBundle {
 
   private Taxpayer taxpayerDetails;
   private List<String> taxReturns = new ArrayList<String>();
-
-
 
   /**
    * Constructor for making a bundle.
@@ -26,7 +23,7 @@ public class TaxpayerBundle {
   }
 
   /**
-   * Getter for Taxpayer Details
+   * Getter for Taxpayer Details.
    * 
    * @return
    */

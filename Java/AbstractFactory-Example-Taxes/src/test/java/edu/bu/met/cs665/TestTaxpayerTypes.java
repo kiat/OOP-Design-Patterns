@@ -1,9 +1,8 @@
 package edu.bu.met.cs665;
 
-import edu.bu.met.cs665.taxAccounts.TaxpayerBundle;
-
 import org.junit.Before;
 import org.junit.Test;
+import edu.bu.met.cs665.taxaccounts.TaxpayerBundle;
 import static org.junit.Assert.assertTrue;
 import org.apache.log4j.PropertyConfigurator;
 

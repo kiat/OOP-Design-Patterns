@@ -1,12 +1,11 @@
-package edu.bu.met.cs665.taxAccounts;
+package edu.bu.met.cs665.taxaccounts;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.apache.log4j.Logger;
 
 /**
- * Handles Taxpayer Details
+ * Handles Taxpayer Details.
  * 
  * @author Sudakar S
  *
@@ -42,9 +41,9 @@ public abstract class Taxpayer {
   /**
    * Sets SSN account Number.
    * 
-   * @param taxpayerType account Number
+   * @param accountName account Number
    */
-  public void setSSN(String accountName) {
+  public void setSsn(String accountName) {
     this.taxpayerType = accountName;
   }
 
@@ -60,29 +59,48 @@ public abstract class Taxpayer {
   /**
    * Sets the taxpayer name.
    * 
-   * @param taxPayer name
+   * @param taxpayerName taxpayer Name
    */
   public void setTaxpayerName(String taxpayerName) {
     this.taxpayerName = taxpayerName;
   }
 
+  /**
+   * Placeholder: Core logic to decide whether trustee account can be created will be defined here.
+   * 
+   * @return
+   */
   public boolean isTrustee() {
     // Placeholder: Core logic to decide whether trustee account can be created will be defined here
     return true;
   }
 
+  /**
+   * Placeholder: Core logic to decide whether CPA account can be created will be defined here.
+   * 
+   * @return
+   */
   public boolean isCpa() {
     // Placeholder: Core logic to decide whether CPA account can be created will be defined here
     return true;
   }
 
-  public boolean IsEmployee() {
-
-    // Placeholder: Core logic to decide whether Employee account can be created will be defined here
+  /**
+   * Placeholder: Core logic to decide whether Employee account can be created will be defined here.
+   * 
+   * @return
+   */
+  public boolean isEmployee() {
+    //Placeholder: Core logic to decide whether Employee account can be created will be defined here
     return true;
   }
 
-  public boolean IsAdmin() {
+  /**
+   * Placeholder: Core logic to decide whether Admin account can be created will be defined here.
+   * 
+   * @return
+   */
+  public boolean isAdmin() {
     // Placeholder: Core logic to decide whether Admin account can be created will be defined here
     return true;
   }

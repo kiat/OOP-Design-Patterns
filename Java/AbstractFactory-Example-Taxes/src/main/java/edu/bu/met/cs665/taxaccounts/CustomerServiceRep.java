@@ -1,14 +1,14 @@
-package edu.bu.met.cs665.taxAccounts;
+package edu.bu.met.cs665.taxaccounts;
 
 import org.apache.log4j.Logger;
 
 public class CustomerServiceRep extends Taxpayer {
 
-  // We use here a logger instead of printing to system.out
+  // We use here a logger instead of printing to system.out.
   private static Logger logger = Logger.getLogger(CustomerServiceRep.class);
 
   /**
-   * Creates an Customer Rep Account
+   * Creates an Customer Rep Account.
    */
   public CustomerServiceRep() {
     this.taxpayerType = "CustomerServiceRep";
