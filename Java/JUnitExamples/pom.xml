@@ -91,6 +91,7 @@
 				<configuration>
 					<configLocation>config/google_checks.xml</configLocation>
 					<failOnViolation>false</failOnViolation>
+					<consoleOutput>true</consoleOutput>
 				</configuration>
 			</plugin>
 
