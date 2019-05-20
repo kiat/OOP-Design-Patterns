@@ -5,7 +5,8 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 /**
- * This class represents a bank acount. 
+ * This class represents a bank acount.
+ * 
  * @author Kia
  *
  */
@@ -38,7 +39,7 @@ public abstract class BankAccount {
   /**
    * Sets the account name.
    * 
-   * @param accountName name of the account 
+   * @param accountName name of the account
    */
   public void setAccountName(String accountName) {
     this.accountName = accountName;
@@ -74,7 +75,7 @@ public abstract class BankAccount {
   /**
    * Set the bank account balance to an amount.
    * 
-   * @param amountInUsd current balance of the account for example 
+   * @param amountInUsd current balance of the account for example
    */
   public void setBalancetInUsd(Double amountInUsd) {
     this.balance = amountInUsd;

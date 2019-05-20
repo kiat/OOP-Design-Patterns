@@ -8,7 +8,7 @@ public class CheckingAcount extends BankAccount {
   private static Logger logger = Logger.getLogger(CheckingAcount.class);
 
   /**
-   * Create an instance of Checking Account. 
+   * Create an instance of Checking Account.
    */
   public CheckingAcount() {
     this.accountName = "PersonalCheckingAccount";

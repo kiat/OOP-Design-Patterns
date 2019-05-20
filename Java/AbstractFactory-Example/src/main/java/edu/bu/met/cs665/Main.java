@@ -1,8 +1,9 @@
 package edu.bu.met.cs665;
 
+import edu.bu.met.cs665.bankacounts.AccountBundle;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import edu.bu.met.cs665.bankacounts.AccountBundle;
+
 
 
 public class Main {
@@ -10,8 +11,9 @@ public class Main {
   private static Logger logger = Logger.getLogger(Main.class);
 
   /**
-   * This main method runs an example. 
-   * @param args not used 
+   * This main method runs an example.
+   * 
+   * @param args not used
    */
   public static void main(String[] args) {
 
@@ -23,20 +25,24 @@ public class Main {
 
 
     AccountBundle bundlePersonal = AccountFacory.createAccountBundle("personal");
-    logger.info("Bank Account " + bundlePersonal.getCheckingAccount().getAccountName() + " is created");
-    logger.info("Bank Account " + bundlePersonal.getSavingAccount().getAccountName() + " is created");
+    logger.info(
+        "Bank Account " + bundlePersonal.getCheckingAccount().getAccountName() + " is created");
+    logger
+        .info("Bank Account " + bundlePersonal.getSavingAccount().getAccountName() + " is created");
 
     AccountBundle bundleCorporate = AccountFacory.createAccountBundle("corporate");
 
-    logger.info("Bank Account " + bundleCorporate.getCheckingAccount().getAccountName() + " is created");
-    logger.info("Bank Account " + bundleCorporate.getSavingAccount().getAccountName() + " is created");
+    logger.info(
+        "Bank Account " + bundleCorporate.getCheckingAccount().getAccountName() + " is created");
+    logger.info(
+        "Bank Account " + bundleCorporate.getSavingAccount().getAccountName() + " is created");
 
     // This line should generate an ERROR in Log
     AccountBundle bundleUnknown = AccountFacory.createAccountBundle("Unknown");
-      if(bundleUnknown==null)
-        ;
-  
-    
+    if (bundleUnknown == null) {
+      logger.error("Bundle account is not known!");
+    }
+
   }
 
 }

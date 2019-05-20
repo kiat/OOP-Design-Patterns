@@ -8,7 +8,7 @@ public class CorporateSavingAccount extends BankAccount {
   private static Logger logger = Logger.getLogger(CorporateSavingAccount.class);
 
   /**
-   * Creates an account of saving bank account. 
+   * Creates an account of saving bank account.
    */
   public CorporateSavingAccount() {
     this.accountName = "CorporateSavingAccount";
