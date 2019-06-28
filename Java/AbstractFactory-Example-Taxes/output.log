@@ -172,3 +172,29 @@ INFO main edu.bu.met.cs665.taxpayerFactory - Trustee Account has been created.
 INFO main edu.bu.met.cs665.Main - Trustee bundle is created
 INFO main edu.bu.met.cs665.Main - Tax Returns Count: 0
 ERROR main edu.bu.met.cs665.taxpayerFactory - I do not know about this type of accounts.
+DEBUG edu.bu.met.cs665.Main.main() edu.bu.met.cs665.TaxpayerFactory - Account Factory: Creating CPA Account.
+DEBUG edu.bu.met.cs665.Main.main() edu.bu.met.cs665.TaxpayerFactory - Account Factory: Checking User Permission for CPA account.
+INFO edu.bu.met.cs665.Main.main() edu.bu.met.cs665.taxaccounts.Cpa - Has permission to create CPA Account
+INFO edu.bu.met.cs665.Main.main() edu.bu.met.cs665.TaxpayerFactory - CPA account bundle has been created .
+INFO edu.bu.met.cs665.Main.main() edu.bu.met.cs665.Main - CPA bundle is created
+INFO edu.bu.met.cs665.Main.main() edu.bu.met.cs665.Main - Tax Returns Count: 0
+DEBUG edu.bu.met.cs665.Main.main() edu.bu.met.cs665.TaxpayerFactory - Tax Factory: Checking for trustee type. 
+DEBUG edu.bu.met.cs665.Main.main() edu.bu.met.cs665.TaxpayerFactory - Account Factory: Created Trustee Account.
+INFO edu.bu.met.cs665.Main.main() edu.bu.met.cs665.taxaccounts.Trustee - Has permission to create Trustee
+INFO edu.bu.met.cs665.Main.main() edu.bu.met.cs665.TaxpayerFactory - Trustee Account has been created. 
+INFO edu.bu.met.cs665.Main.main() edu.bu.met.cs665.Main - Trustee bundle is created
+INFO edu.bu.met.cs665.Main.main() edu.bu.met.cs665.Main - Tax Returns Count: 0
+ERROR edu.bu.met.cs665.Main.main() edu.bu.met.cs665.TaxpayerFactory - I do not know about this type of accounts.
+DEBUG edu.bu.met.cs665.Main.main() edu.bu.met.cs665.TaxpayerFactory - Account Factory: Creating CPA Account.
+DEBUG edu.bu.met.cs665.Main.main() edu.bu.met.cs665.TaxpayerFactory - Account Factory: Checking User Permission for CPA account.
+INFO edu.bu.met.cs665.Main.main() edu.bu.met.cs665.taxaccounts.Cpa - Has permission to create CPA Account
+INFO edu.bu.met.cs665.Main.main() edu.bu.met.cs665.TaxpayerFactory - CPA account bundle has been created .
+INFO edu.bu.met.cs665.Main.main() edu.bu.met.cs665.Main - CPA bundle is created
+INFO edu.bu.met.cs665.Main.main() edu.bu.met.cs665.Main - Tax Returns Count: 0
+DEBUG edu.bu.met.cs665.Main.main() edu.bu.met.cs665.TaxpayerFactory - Tax Factory: Checking for trustee type. 
+DEBUG edu.bu.met.cs665.Main.main() edu.bu.met.cs665.TaxpayerFactory - Account Factory: Created Trustee Account.
+INFO edu.bu.met.cs665.Main.main() edu.bu.met.cs665.taxaccounts.Trustee - Has permission to create Trustee
+INFO edu.bu.met.cs665.Main.main() edu.bu.met.cs665.TaxpayerFactory - Trustee Account has been created. 
+INFO edu.bu.met.cs665.Main.main() edu.bu.met.cs665.Main - Trustee bundle is created
+INFO edu.bu.met.cs665.Main.main() edu.bu.met.cs665.Main - Tax Returns Count: 0
+ERROR edu.bu.met.cs665.Main.main() edu.bu.met.cs665.TaxpayerFactory - I do not know about this type of accounts.
