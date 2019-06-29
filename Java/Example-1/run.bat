@@ -1,4 +1,3 @@
-mvn clean compile assembly:single
+mvn clean compile
+mvn exec:java -Dexec.executable="edu.bu.met.cs665.Main" -Dlog4j.configuration="file:log4j.properties"
 
-
-java -cp target/Example-1-1.0-SNAPSHOT-jar-with-dependencies.jar edu.bu.met.cs665.Main
