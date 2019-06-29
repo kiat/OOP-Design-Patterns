@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>edu.bu.cs665</groupId>
-	<artifactId>Example-1</artifactId>
+	<artifactId>Singleton-Game-Example</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>Example-1</name>
+	<name>Singleton-Game-Example</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
