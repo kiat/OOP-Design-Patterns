@@ -7,10 +7,6 @@ In this Repository we collect example design patterns in **Java** and **C++**.
 
 * Directory Java/ includes Java examples
 
-![](https://travis-ci.org/kiat/MET-CS665.svg?branch=master)
-
-
-
 * Directory C++/ includes C++ examples
 
 ## Java Examples
