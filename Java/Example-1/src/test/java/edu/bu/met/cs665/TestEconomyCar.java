@@ -1,11 +1,12 @@
 package edu.bu.met.cs665;
 
-
-import org.junit.Test;
-import edu.bu.met.cs665.meansoftransportation.EconomyCar;
-import edu.bu.met.cs665.meansoftransportation.MeansOfTransportation;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
+
+import edu.bu.met.cs665.meansoftransportation.EconomyCar;
+import edu.bu.met.cs665.meansoftransportation.MeansOfTransportation;
+
+import org.junit.Test;
 
 // Write some Unit tests for your program like the following.
 
