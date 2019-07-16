@@ -12,7 +12,7 @@ public class Main {
   /**
    * Here we execute some examples and illustrate the strategy pattern.
    * 
-   * @param args not used. 
+   * @param args not used.
    */
   public static void main(String[] args) {
 
