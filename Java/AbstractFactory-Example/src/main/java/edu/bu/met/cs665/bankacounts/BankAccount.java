@@ -5,7 +5,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 /**
- * This class represents a bank acount.
+ * This class represents a bank account.
  * 
  * @author Kia
  *
