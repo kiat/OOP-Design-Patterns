@@ -1,6 +1,6 @@
 # Refactoring Example
 
-This project includes some example implementations of refactoriung of singleton bulls and cows game from assignment #3. 
+This project includes some example implementations of refactoring of singleton bulls and cows game from assignment #3. 
 
 Refactoring 1: Class GameStatus for converting procedural design to objects
 
