@@ -1,5 +1,6 @@
 # Compiled class file
 *.class
+.classpath
 
 # Log file
 *.log
@@ -22,12 +23,21 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-/target/
 
-.DS_Store
+# Maven based Java project
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.logs
+*.iml
 
-# project setting files 
+.idea/
 
-.classpath
-.project
+.eclipse
+
 .settings
+.project
+
+*.log
