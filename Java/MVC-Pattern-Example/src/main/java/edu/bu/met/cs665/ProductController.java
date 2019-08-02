@@ -53,7 +53,9 @@ public class ProductController {
 	 * Updates the current print out.
 	 */
 	public void view() {
-		this.productPrintOut.print(this.product.getName(), this.product.getProductUnitPrice());
+
+		this.productPrintOut.print(this.product.getName(),
+				this.product.getProductUnitPrice());
 	}
 
 }
