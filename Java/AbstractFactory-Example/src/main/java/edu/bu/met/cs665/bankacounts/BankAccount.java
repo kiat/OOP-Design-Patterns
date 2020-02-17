@@ -104,7 +104,7 @@ public abstract class BankAccount {
    */
   public void addAcountToDatabases() {
     for (String databse : databaseNames) {
-      logger.info("Add this account is added to " + databse);
+      logger.info("This account is added to " + databse);
     }
 
   }
