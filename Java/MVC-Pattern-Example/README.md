@@ -1,6 +1,17 @@
 # Model View Controller
 
-This is a very simple example of Model View Controller. 
+MVC separates the application logic into 3 layers, models, views, and controllers.
+models represent how your data is structured throughout your application. Views represent the actual presentation of your models 
+on the client side. Controller is the bridge that allows models and views to work with one another while separating their logic. 
+
+In the first example, we have a Product (model), ProductController (controller), and ProductPrintOut (views). 
+The main action is in the ProductController class, where it is connecting the models to the views. 
+
+In the web example (More realistic use case for MVC), we have our Teacher model, our TeacherServletController, 
+and an actual web page (teacher-record.jsp). The controller sends a list of teacher models as an HTTP request to the web page 
+and all the web page does is display that data. The advantages of MVC include, separating the presentation layer from the business layer,
+the controller is responsible for invoking the model and sending that model to the view, and the model is modular, 
+you can use it in an web, mobile, or desktop application.
 
 
 
