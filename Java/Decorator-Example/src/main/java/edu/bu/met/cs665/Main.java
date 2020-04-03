@@ -7,7 +7,7 @@ import edu.bu.met.cs665.coffeecondiments.HouseBlend;
 import edu.bu.met.cs665.coffeecondiments.Milk;
 import edu.bu.met.cs665.coffeecondiments.Mocha;
 import edu.bu.met.cs665.coffeecondiments.Soy;
-import edu.bu.met.cs665.coffeecondiments.Suger;
+import edu.bu.met.cs665.coffeecondiments.Sugar;
 import edu.bu.met.cs665.coffeecondiments.Whip;
 
 
@@ -28,7 +28,7 @@ public class Main {
 		    Beverage beverage2 = new Decaf();
 		    beverage2 = new Milk(beverage2);
 		    beverage2 = new Milk(beverage2);
-		    beverage2 = new Suger(beverage2);
+		    beverage2 = new Sugar(beverage2);
 		    
 		    System.out.println(beverage2.getDescription() + " $" + beverage2.cost());
 

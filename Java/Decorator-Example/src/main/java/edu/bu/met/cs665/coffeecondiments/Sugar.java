@@ -1,14 +1,14 @@
 package edu.bu.met.cs665.coffeecondiments;
 
-public class Suger extends CondimentDecorator {
+public class Sugar extends CondimentDecorator {
 	Beverage beverage;
 
-	public Suger(Beverage beverage) {
+	public Sugar(Beverage beverage) {
 		this.beverage = beverage;
 	}
 
 	public String getDescription() {
-		return beverage.getDescription() + ", Suger";
+		return beverage.getDescription() + ", Sugar";
 	}
 
 	public double cost() {
