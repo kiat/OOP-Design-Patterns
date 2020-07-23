@@ -3,6 +3,7 @@ package edu.bu.met.cs665.emailcollectorsystem;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public abstract class Email {
 
 	String header = "New Email";
@@ -13,17 +14,37 @@ public abstract class Email {
 	List<String> bccList = new ArrayList<>();
 	String bccEmail;
 
+
+
+
+	/**
+	 * Method for adding email address to bcc list.
+	 *
+	 * @param bccEmail of shop
+	 */
 	public void addEmailToBccList(String bccEmail) {
 		bccList.add(bccEmail);
 	}
 
+	/**
+	 * Method for removing email address from bcc list.
+	 *
+	 * @param bccEmail of shop
+	 */
 	public void removeEmailFromBccList(String bccEmail) {
 		bccList.remove(bccEmail);
 	}
 
+	/**
+	 * Method for removing all email addresses from bcc list.
+	 */
 	public void removeBcc() {
 		bccList.clear();
 	}
+
+	/**
+	 * Getters and Setters.
+	 */
 
 	public String getBccEmail() {
 		return bccEmail;
@@ -81,5 +102,8 @@ public abstract class Email {
 		this.virusInspection = virusInspection;
 	}
 
+	/**
+	 * The abstract method to be implemented by the classes extending from Email class.
+	 */
 	public abstract String sendEmail();
 }
