@@ -1,9 +1,7 @@
 package edu.bu.met.cs665;
 
-import edu.bu.met.cs665.visitable.Clothing;
-import edu.bu.met.cs665.visitable.Fruit;
-import edu.bu.met.cs665.visitable.Tool;
-import edu.bu.met.cs665.visitor.Cart;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -14,32 +12,57 @@ public class Main {
 	 *            not used
 	 */
 	public static void main(String[] args) {
-		// Tool objects
-		Tool hammer = new Tool(12.09, 2.1, false);
-		Tool screwDriverSet = new Tool(34.98, 14.1, true);
-		// Fruit objects
-		Fruit orange = new Fruit(3, 21, "orange");
-		Fruit apple = new Fruit(2, 1, "apple");
-		// clothing objects
-		Clothing sweater = new Clothing('l', 33.99);
-		Clothing jacket = new Clothing('l', 239.99);
 
-    // store them in a list of element object
-//    List<Element> elements = new ArrayList<>(Arrays.asList(
-//    		hammer, screwDriverSet, orange, apple, sweater, jacket
-//		));
+		
+		// Create a Student object and set values 
+		Student student1 = new Student();
+		student1.setName("John Doe");
+		List<String> courseList1 = new ArrayList<String>();
+		courseList1.add("CS555"); courseList1.add("CS665");
+		
+		student1.setCourses( courseList1);
 
-		// create the shopping cart which will visit each object
-		Cart cart = new Cart();
+		
+		// Create a Teaching Assistant Student object and set values
+		TeachingAssistant student2 = new TeachingAssistant();
+		
+		student2.setName("Matt Doe");
+		student2.setCourses(courseList1);
+		student2.setSalary(3000.00f);
+		
+		
+		// Create a Staff Member
+		Staff staff=new Staff(); 
+		staff.setName("Julia Doe");
+		staff.setSalary(6000f);
+		
+		
+		// Create a Faculty Member. 
+		Faculty faculty=new Faculty(); 
+		
+		faculty.setName("Max Mastermann");
+		faculty.setSalary(18000f);
 
-		// visit the items
-		double sweaterPrice = cart.visit(sweater);
-		double orangePrice = cart.visit(orange);
-		double toolPrice = cart.visit(hammer);
+		
+		
+		// Now Let us go and visit them. 
+		student1.accept(new CourseVisitor());
+		student1.accept(new SalaryVisitor());
+		
+		student2.accept(new CourseVisitor());
+		student2.accept(new SalaryVisitor());
 
-    System.out.println("Sweater price = $" + sweaterPrice);
-    System.out.println("Orange price = $" + orangePrice);
-    System.out.println("Hammer price = $" + toolPrice);
+		
+		staff.accept(new CourseVisitor());
+		staff.accept(new SalaryVisitor());
+
+		
+		faculty.accept(new CourseVisitor());
+		faculty.accept(new SalaryVisitor());
+
+		
+		
+		
 	}
 
 }
