@@ -5,7 +5,7 @@ public class Circle implements Figure {
   /**
    * Print a Circle.
    */
-  @Override
+
   public void print() {
     int n = 4;
     System.out.println();

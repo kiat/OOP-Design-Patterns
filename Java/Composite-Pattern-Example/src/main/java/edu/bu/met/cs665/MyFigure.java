@@ -9,7 +9,6 @@ public class MyFigure implements Figure {
 
 
 
-  @Override
   public void print() {
     for (Figure figure : childFigures) {
       // We delegate the printing task to each child Figure.
