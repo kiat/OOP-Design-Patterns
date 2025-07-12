@@ -1,4 +1,3 @@
-# MET-CS665 Class Repository
 
 # Code Examples about Design Patterns  
 
